@@ -5,14 +5,14 @@ import books from '../books';
 
 export default () => (
   <div>
-    {books.map(book => (
-      <Link
-        key={book.id}
-        to="Book"
-        params={{ id: book.id }}
-      >
-        {book.title} by {book.author}
-      </Link>
-    ))}
+    <ul>
+      {books.map(book => (
+        <li key={book.id}>
+          <Link to="Book" params={{ id: book.id }} >
+            {book.title} by {book.author}
+          </Link>
+        </li>
+      ))}
+    </ul>
   </div>
 );
