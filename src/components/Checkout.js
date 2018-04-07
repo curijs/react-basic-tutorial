@@ -14,8 +14,10 @@ export default ({ router, response }) => {
       <h1>Checkout</h1>
       <table>
         <thead>
-          <th>Title</th>
-          <th>Quantity</th>
+          <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+          </tr>
         </thead>
         <tbody>
           {books.map(book => (
