@@ -32,8 +32,11 @@ export default ({ router, response }) => {
         type="button"
         onClick={() => {
           cart.reset();
-          const pathname = router.addons.pathname('Checkout');
-          router.history.replace({ pathname, hash: 'thanks' });
+          router.navigate({
+            name: "Checkout",
+            hash: "thanks",
+            method: "REPLACE"
+          });
         }}
       >
         Buy

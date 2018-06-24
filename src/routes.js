@@ -7,37 +7,37 @@ export default [
   {
     name: "Home",
     path: "",
-    match: {
-      response({ set }) {
-        set.body(Home);
-      }
+    response() {
+      return {
+        body: Home
+      };
     }
   },
   {
     name: "Book",
     path: "book/:id",
-    match: {
-      response({ set }) {
-        set.body(Book);
-      }
+    response() {
+      return {
+        body: Book
+      };
     }
   },
   {
     name: "Checkout",
     path: "checkout",
-    match: {
-      response({ set }) {
-        set.body(Checkout);
-      }
+    response() {
+      return {
+        body: Checkout
+      };
     }
   },
   {
     name: "Catch All",
     path: "(.*)",
-    match: {
-      response({ set }) {
-        set.body(NotFound);
-      }
+    response() {
+      return {
+        body: NotFound
+      };
     }
   }
 ];

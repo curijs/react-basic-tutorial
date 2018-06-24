@@ -19,8 +19,7 @@ export default ({ response, router }) => {
         type="button"
         onClick={() => {
           cart.add(book, 1);
-          const pathname = router.addons.pathname('Checkout');
-          router.history.push({ pathname });
+          router.navigate({ to: "Checkout" });
         }}
       >
         Add to Cart
