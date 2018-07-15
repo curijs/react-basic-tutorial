@@ -2,40 +2,48 @@
 # yarn lockfile v1
 
 
-"@curi/addon-active@^1.0.0-beta.5":
-  version "1.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/@curi/addon-active/-/addon-active-1.0.0-beta.5.tgz#e4f4431cff4e87152c08e7bb304c5be16e9aa273"
+"@curi/core@^1.0.0-beta.29":
+  version "1.0.0-beta.37"
+  resolved "https://registry.yarnpkg.com/@curi/core/-/core-1.0.0-beta.37.tgz#1a0f54aa283e5d23fdcac02e24dd19369af57faa"
   dependencies:
-    "@curi/core" "^1.0.0-beta.11"
+    "@curi/router" "^1.0.0-beta.37"
 
-"@curi/core@^1.0.0-beta.11", "@curi/core@^1.0.0-beta.26", "@curi/core@^1.0.0-beta.28":
-  version "1.0.0-beta.28"
-  resolved "https://registry.yarnpkg.com/@curi/core/-/core-1.0.0-beta.28.tgz#25b316ea040ab1ed67b60eb3f2a7d67f290e7956"
+"@curi/react@^1.0.0-beta.29":
+  version "1.0.0-beta.29"
+  resolved "https://registry.yarnpkg.com/@curi/react/-/react-1.0.0-beta.29.tgz#a46e8645a572ed963e06a1c39a2c5ff2e0a26b75"
   dependencies:
+    "@curi/route-active" "^1.0.0--.beta.6"
+    "@curi/route-prefetch" "^1.0.0-beta.11"
+    "@curi/router" "^1.0.0-beta.37"
     "@hickory/root" "^1.0.0-beta.7"
+    "@types/react" "^16.3.11"
+
+"@curi/route-active@^1.0.0--.beta.6":
+  version "1.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@curi/route-active/-/route-active-1.0.0-beta.6.tgz#a36989510aa82b2d13b1bd871c875ef025f06a80"
+  dependencies:
+    "@curi/core" "^1.0.0-beta.29"
+
+"@curi/route-prefetch@^1.0.0-beta.11":
+  version "1.0.0-beta.11"
+  resolved "https://registry.yarnpkg.com/@curi/route-prefetch/-/route-prefetch-1.0.0-beta.11.tgz#fb5d2cf5bdd9215e25622af84847e5d983d69239"
+  dependencies:
+    "@curi/router" "^1.0.0-beta.37"
+    "@hickory/root" "1.0.0-beta.8"
+
+"@curi/router@^1.0.0-beta.37":
+  version "1.0.0-beta.37"
+  resolved "https://registry.yarnpkg.com/@curi/router/-/router-1.0.0-beta.37.tgz#a4ab61beffcb3811c3cda535e05240ee157351ec"
+  dependencies:
+    "@hickory/root" "1.0.0-beta.8"
     path-to-regexp "^2.1.0"
 
-"@curi/react@^1.0.0-beta.20":
-  version "1.0.0-beta.20"
-  resolved "https://registry.yarnpkg.com/@curi/react/-/react-1.0.0-beta.20.tgz#10b6bbebe8a062ec509109b7d51e85fe2b28e922"
-  dependencies:
-    "@curi/addon-active" "^1.0.0-beta.5"
-    "@curi/core" "^1.0.0-beta.26"
-    "@hickory/root" "^1.0.0-beta.6"
-    "@types/invariant" "^2.2.29"
-    "@types/prop-types" "^15.5.2"
-    "@types/react" "^16.0.18"
-    invariant "^2.2.2"
-    prop-types "^15.6.0"
-    react-broadcast "^0.7.0-rc.3"
-    warning "^3.0.0"
-
-"@hickory/browser@^1.0.0-beta.6":
-  version "1.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/@hickory/browser/-/browser-1.0.0-beta.6.tgz#956342d0015f56a574ec898defb90b35804493f7"
+"@hickory/browser@^1.0.0-beta.7":
+  version "1.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/@hickory/browser/-/browser-1.0.0-beta.7.tgz#803f318e1ec43d9241a37cb3e4b94c01b8f647c1"
   dependencies:
     "@hickory/dom-utils" "^1.0.0-beta.2"
-    "@hickory/root" "^1.0.0-beta.7"
+    "@hickory/root" "^1.0.0-beta.8"
 
 "@hickory/dom-utils@^1.0.0-beta.2":
   version "1.0.0-beta.2"
@@ -45,25 +53,23 @@
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@hickory/location-utils/-/location-utils-1.0.0-beta.2.tgz#22cea6b0446f4d76685b03000e432cf43be40153"
 
-"@hickory/root@^1.0.0-beta.6", "@hickory/root@^1.0.0-beta.7":
+"@hickory/root@1.0.0-beta.8", "@hickory/root@^1.0.0-beta.8":
+  version "1.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@hickory/root/-/root-1.0.0-beta.8.tgz#f4132350507db8edd241161a5e86ac6db9301be2"
+  dependencies:
+    "@hickory/location-utils" "^1.0.0-beta.2"
+
+"@hickory/root@^1.0.0-beta.7":
   version "1.0.0-beta.7"
   resolved "https://registry.yarnpkg.com/@hickory/root/-/root-1.0.0-beta.7.tgz#7369966811a16122567e6fda3bc559afcfecf943"
   dependencies:
     "@hickory/location-utils" "^1.0.0-beta.2"
 
-"@types/invariant@^2.2.29":
-  version "2.2.29"
-  resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.29.tgz#aa845204cd0a289f65d47e0de63a6a815e30cc66"
-
-"@types/prop-types@^15.5.2":
-  version "15.5.2"
-  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.2.tgz#3c6b8dceb2906cc87fe4358e809f9d20c8d59be1"
-
-"@types/react@^16.0.18":
-  version "16.3.5"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.3.5.tgz#bd3b21285602ea7cadb4b9e0d9711d96fd5692cc"
+"@types/react@^16.3.11":
+  version "16.4.6"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.6.tgz#5024957c6bcef4f02823accf5974faba2e54fada"
   dependencies:
-    csstype "^2.0.0"
+    csstype "^2.2.0"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -1910,9 +1916,9 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.1.1.tgz#37b01a7a9958ef0b88167ff6678deccd732e0ae2"
+csstype@^2.2.0:
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.5.tgz#4125484a3d42189a863943f23b9e4b80fedfa106"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -5623,13 +5629,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-broadcast@^0.7.0-rc.3:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/react-broadcast/-/react-broadcast-0.7.0.tgz#e0f70c208293bacc43eb1fff1971806076c756b6"
-  dependencies:
-    prop-types "^15.6.0"
-    warning "^3.0.0"
-
 react-dev-utils@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-5.0.1.tgz#1f396e161fe44b595db1b186a40067289bf06613"
@@ -5653,9 +5652,9 @@ react-dev-utils@^5.0.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.3.1:
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.3.1.tgz#6a3c90a4fb62f915bdbcf6204422d93a7d4ca573"
+react-dom@^16.4.1:
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -5666,7 +5665,7 @@ react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
 
-react-scripts@1.1.4:
+react-scripts@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-1.1.4.tgz#d5c230e707918d6dd2d06f303b10f5222d017c88"
   dependencies:
@@ -5711,9 +5710,9 @@ react-scripts@1.1.4:
   optionalDependencies:
     fsevents "^1.1.3"
 
-react@^16.3.1:
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.3.1.tgz#4a2da433d471251c69b6033ada30e2ed1202cfd8"
+react@^16.4.1:
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -6999,12 +6998,6 @@ walker@~1.0.5:
   resolved "https://registry.yarnpkg.com/walker/-/walker-1.0.7.tgz#2f7f9b8fd10d677262b18a884e28d19618e028fb"
   dependencies:
     makeerror "1.0.x"
-
-warning@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
-  dependencies:
-    loose-envify "^1.0.0"
 
 watch@~0.10.0:
   version "0.10.0"
