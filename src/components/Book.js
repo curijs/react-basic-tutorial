@@ -3,7 +3,7 @@ import React from 'react';
 import books from '../books';
 import cart from '../cart';
 
-export default ({ response, router }) => {
+export default function Book({ response, router }) {
   const id = parseInt(response.params.id, 10);
   const book = books.find(b => b.id === id);
   if (!book) {

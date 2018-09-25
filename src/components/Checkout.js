@@ -2,7 +2,7 @@ import React from 'react';
 
 import cart from '../cart';
 
-export default ({ router, response }) => {
+export default function Checkout({ router, response }) {
   const books = cart.items();  
   if (!books.length) {
     return response.location.hash === 'thanks'
@@ -43,4 +43,4 @@ export default ({ router, response }) => {
       </button>
     </div>
   );
-};
+}
