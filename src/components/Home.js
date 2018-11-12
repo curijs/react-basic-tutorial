@@ -9,7 +9,7 @@ export default function Home() {
       <ul>
         {books.map(book => (
           <li key={book.id}>
-            <Link to="Book" params={{ id: book.id }} >
+            <Link name="Book" params={{ id: book.id }} >
               {book.title} by {book.author}
             </Link>
           </li>
