@@ -1,9 +1,11 @@
 import React from 'react';
+import { useRouter } from '@curi/react-dom';
 
 import books from '../books';
 import cart from '../cart';
 
-export default function Book({ response, router }) {
+export default function Book({ response }) {
+  const router = useRouter();
   const id = parseInt(response.params.id, 10);
   const book = books.find(b => b.id === id);
   if (!book) {
