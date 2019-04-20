@@ -10,28 +10,28 @@ export default prepareRoutes({
     {
       name: "Home",
       path: "",
-      response() {
+      respond() {
         return { body: Home };
       }
     },
     {
       name: "Book",
       path: "book/:id",
-      response() {
+      respond() {
         return { body: Book };
       }
     },
     {
       name: "Checkout",
       path: "checkout",
-      response() {
+      respond() {
         return { body: Checkout };
       }
     },
     {
       name: "Catch All",
       path: "(.*)",
-      response() {
+      respond() {
         return { body: NotFound };
       }
     }
